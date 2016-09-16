@@ -1,0 +1,56 @@
+Load order:
+
+Offset
+PlayTime
+Funds
+HunterRank
+HunterArt1
+HunterArt2
+HunterArt3
+StoredName
+
+Voice
+EyeColor
+Clothing
+Gender
+HuntingStyle
+HairStyle
+Face
+Features
+
+SkinColor
+HairColor
+FeaturesColor
+ClothingColor
+
+HRPoints
+Zenny
+AcademyPoints
+BerunaPoints
+KokotoPoints
+PokkePoints
+YukumoPoints
+
+ItemBox
+
+Pouch
+
+Equipment
+
+Palicos
+
+PalicoEquipment
+
+GuildCard
+	MonsterKills
+	MonsterCaptures
+
+Shops
+	ArmorShops
+	WeaponShops
+	PalicoShops
+
+UnlockedBoxData
+
+Shoutouts
+AutomaticShoutOuts

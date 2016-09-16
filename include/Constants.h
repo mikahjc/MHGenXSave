@@ -1,7 +1,5 @@
 ﻿#pragma once
 #include <string>
-#define ITEMBOX 3150
-#define ITEMPOUCH 72
 
 //Trying defines instead of a class
 #define TOTAL_ITEM_BOX_SLOTS 1400
@@ -16,7 +14,7 @@
 #define SIZEOF_ITEM 18
 #define SIZEOF_ITEMBOX 3150
 #define SIZEOF_ITEMPOUCH 72
-#define SIZEOF_EQUIPMENT 24
+#define SIZEOF_EQUIPMENT 36
 #define SIZEOF_PALICO 319
 #define SIZEOF_GUILD_CARD 5208
 #define SIZEOF_CRAFTABLE_ARMOR 392
@@ -40,9 +38,8 @@
 
 #define TOTAL_SHOUTOUTS 24
 #define TOTAL_AUTOMATIC_SHOUTOUTS 9
-
-using std::string;
 /*
+using std::string;
 class Constants
 {
 	public:

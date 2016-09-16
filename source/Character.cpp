@@ -20,12 +20,12 @@ void Character::importItems(u8 buffer[], int type)
 		{
 			num3 = buffer[byteindex++];
 			unsigned int num4 = num1 >> 8;
-			num1 = (u32)((int)num3 << 24 | (int)num4 & 16777215);
+			num1 = (u32)((int)num3 << 24 | ((int)num4 & 16777215));
 			num2 += 8U;
 		}
 		if (num2 >= 18U)
 		{
-			unsigned int num4 = num1 >> 32 - (int)num2 & 262143U;
+			unsigned int num4 = ((num1 >> (32 - (int)num2)) & 262143U);
 			num1 = (u32)num3 << 24;
 			num2 -= 18U;
 			itemStorage[index] = Item(num4 & 2047U, num4 >> 11);
@@ -37,7 +37,7 @@ u8* Character::packItems(int type)
 {
 	int byteIndex = 0;
 	u8* newBuffer = new u8[type];
-	Item* itemStorage;
+	Item* itemStorage = NULL;
 	if(type == SIZEOF_ITEMBOX)
 		itemStorage = itemBox;
 	else if(type == SIZEOF_ITEMPOUCH)
